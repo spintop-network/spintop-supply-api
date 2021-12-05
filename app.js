@@ -18,9 +18,9 @@ app.get("/totalSupply", async (req, res) => {
 });
 
 app.get("/circSupply", async (req, res) => {
-  let totalSupply = await contract.CirculatingSupply();
+  let totalSupply = await contract.balanceOf("0x89c68051543Fa135B31c2CE7BD8Cdf392345FF01");
   res.send(ethers.utils.formatEther(totalSupply));
 });
-app.listen(4444, () => {
-  console.log("listening on port 3000");
+app.listen(80, () => {
+  console.log("listening on port 80");
 });
