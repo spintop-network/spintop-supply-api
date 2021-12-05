@@ -6,7 +6,7 @@ const abi = require("./ERC20_ABI.json");
 
 const address = "0x6aa217312960a21adbde1478dc8cbcf828110a67";
 const bscProvider = new ethers.providers.JsonRpcProvider(
-  "https://bsc-dataseed.binance.org/"
+  "https://delicate-holy-sea.bsc.quiknode.pro/805724f094ab3267a2c7f380c5948052738576b9/"
 );
 const contract = new ethers.Contract(address, abi, bscProvider);
 
